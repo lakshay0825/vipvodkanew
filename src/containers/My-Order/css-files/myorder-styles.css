@@ -1,0 +1,285 @@
+*{
+  margin: 0;
+}
+
+.myorder-body{
+  background-image: url("../../../assets/vip-my-order/vip-my-order.jpg");
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.myorder-logo{
+  text-align: left;
+}
+
+.myorder-logo img{
+  max-height: 12vh;
+  margin: 2% 2% 0;
+}
+
+.myOrder-maindiv {
+  width: 75%;
+  margin: 0 auto 2%;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 40px;
+  align-items: center;
+  padding: 2.2rem 3.5rem 2.9rem;
+}
+
+.profile-img{
+  border: 3px solid #e3ae55;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.myorder-main-section{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* menu bar section */
+
+.myorder-menu-bar{
+  color: white;
+}
+
+.name-section{
+  display: flex;
+  margin-top: 2rem;
+}
+
+.name-section h1{
+  margin: 0;
+  font-size: 2.3rem;
+  font-weight: 400;
+  font-family: 'Open Sans';
+}
+
+.name-section a{
+  padding: 1.2rem 2rem 0;
+  opacity: 0.6; 
+}
+
+.email{
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: 'Open Sans';
+}
+
+.myorder-linksDiv {
+  margin-top: 3rem;
+}
+
+.myorder-linksDiv p{
+  margin: 2rem 0;
+}
+
+.anchorLink {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Open Sans';
+  margin-top: 3rem;
+}
+
+.anchorLink.active {
+  text-decoration: none;
+  font-size: 23px;
+  color: #e3ae55;
+  font-weight: 400;
+  font-family: 'Open Sans';
+  border-bottom: 1px solid #e3ae55;
+}
+
+/* order section */
+
+.myOrder-section{
+  color: white;
+  height: 60vh;
+  margin-right: 2%;
+  margin-left: 8%;
+  padding: 0 2rem 2rem 4rem;
+  border-left: 2px solid gold;
+  overflow: scroll;
+}
+
+.sticky{
+  height: 12vh;
+  background-color: black;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding-bottom: 1rem;
+}
+
+.order-heading{
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-order-heading{
+  color: rgba(227,174,85,255);
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 2.3rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.filter{
+  font-size: 1.4rem;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  margin: 0;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.filter-icon{
+  margin-right: 1rem;
+  color: rgba(227,174,85,255);
+}
+
+.show-orders-filter{
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-orders-filter p{
+  color: rgba(255,255,255,255);
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.showfil{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0 0.6rem 0;
+}
+
+.showfil p{
+  padding: 0.5rem 0 0.5rem;
+}
+
+.showfil a{
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Open Sans';
+}
+
+.showfil a:hover{
+  color: #e3ae55;
+}
+
+/* order item section */
+
+.order-div{
+  margin-right: 15%;
+  background-size: 100% 100%;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.order-item{
+  display: flex;
+  padding: 2rem;
+}
+
+.order-item img{
+  height: 30vh;
+}
+
+.order-details{
+  padding: 2rem 0 0.5rem;
+}
+
+.order-details h3{
+  margin-top: 0;
+  font-family: 'Open Sans';
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.order-details p{
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 0.5rem;
+}
+
+.buttons{
+  text-align: center;
+}
+
+.buyNowBtn,
+.addCartBtn,
+.superCoinBtn {
+  margin: 1rem 1rem 0 0;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 12px;
+  background-color: transparent;
+  border: 1px solid #e3ae55;
+  font-size: 0.6rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: 'Open Sans';
+}
+
+.superCoinBtn {
+  width: 7rem;
+}
+
+button:hover{
+  background-color: rgba(227,174,85,255);
+  color: black;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .myorder-body{
+    background-size: 100% 100%;
+  }
+
+  .myorder-main-section{
+    flex-direction: column;
+  }
+  
+  .myorder-linksDiv {
+    display: flex;
+    margin-top: 0;
+  }
+
+  .myorder-linksDiv a{
+    font-size: 0.8rem;
+  }
+
+  .myOrder-section{
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .order-div{
+    width: 70vw;
+    padding-right: 1rem;
+  }
+
+  .order-item img{
+    height: 20vh;
+  }
+
+  .order-details h3{
+    font-size: 1rem;
+  }
+}
